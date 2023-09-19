@@ -2,12 +2,14 @@
 
 This Kontent.ai Learn project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). The project demonstrates how to preview content from a Kontent.ai environment and how to annotate HTML markup to use the [Kontent.ai Smart Link SDK](https://github.com/kontent-ai/smart-link).
 
+This project shows the minimum code necessary to prepare your app for Web Spotlight.
+
 To run this app against your Kontent.ai project, take the [Hello Web Spotlight](https://docs-preview.kontent.ai/learn/develop/hello-web-spotlight) path in [Kontent.ai Learn](https://kontent.ai/learn) and specify the following environment variables in your `.env.local`:
 
 * `REACT_APP_KONTENT_AI_ENVIRONMENT_ID` with your [Kontent.ai environment ID](https://kontent.ai/learn/docs/environments#a-get-your-environment-id).
 * `REACT_APP_KONTENT_AI_PREVIEW_API_KEY` with your [Kontent.ai Delivery API key](https://kontent.ai/learn/docs/apis/api-keys#a-delivery-api-keys) with permission for content preview.
 
-
+**The environment variables are included in the build. Do not use in production.**
 
 ## Available Scripts
 

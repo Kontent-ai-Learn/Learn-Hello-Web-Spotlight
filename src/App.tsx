@@ -60,7 +60,6 @@ function App() {
           </div>
         </div>
       )}
-    <footer>View <a href='https://github.com/Kontent-ai-Learn/Learn-Hello-Web-Spotlight/tree/main'>source code on GitHub</a>.</footer>
     </div>
   );
 }

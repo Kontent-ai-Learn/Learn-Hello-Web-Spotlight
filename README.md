@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Kontent.ai Learn project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). The project demonstrates how to preview content from a Kontent.ai environment and how to annotate HTML markup to use the [Kontent.ai Smart Link SDK](https://github.com/kontent-ai/smart-link).
+
+To run this app against your Kontent.ai project, take the [Hello Web Spotlight](https://docs-preview.kontent.ai/learn/develop/hello-web-spotlight) path in [Kontent.ai Learn](https://kontent.ai/learn) and specify the following environment variables in your `.env.local`:
+
+* `REACT_APP_KONTENT_AI_ENVIRONMENT_ID` with your [Kontent.ai environment ID](https://kontent.ai/learn/docs/environments#a-get-your-environment-id).
+* `REACT_APP_KONTENT_AI_PREVIEW_API_KEY` with your [Kontent.ai Delivery API key](https://kontent.ai/learn/docs/apis/api-keys#a-delivery-api-keys) with permission for content preview.
+
+
 
 ## Available Scripts
 
@@ -14,11 +21,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -29,18 +31,12 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `surge ./build`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Install Surge.sh on your device via `npm i -g surge` and then run `surge` to deploy the app.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more about Kontent.ai development and best practices in [Kontent.ai Learn](https://kontent.ai/learn).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn React, check out the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) and [React documentation](https://reactjs.org/).

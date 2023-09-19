@@ -7,13 +7,13 @@ import KontentSmartLink from '@kontent-ai/smart-link';
 function App() {
   const [landingPage, setLandingPage] = useState<LandingPage | null>(null);
 
-  // Retrieve the Website root item
+  // Retrieves the Website root item and saves the linked Landing page
   useEffect(() => {
     deliveryClient.item<WebSpotlightRoot>('website_root')
       .toPromise()
       .then(
         response => (
-          // Website root uses the 'Content' element to link the landing page
+          // Website root uses the 'Content' element to link the Landing page
           setLandingPage(response.data.item.elements.content.linkedItems[0])
         )
       )
